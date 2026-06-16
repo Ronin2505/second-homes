@@ -1,0 +1,17 @@
+{
+  "name": "second-homes",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @second-homes/web",
+    "dev:web": "npm run dev --workspace @second-homes/web",
+    "dev:api": "npm run start:dev --workspace @second-homes/api",
+    "build": "npm run build --workspaces",
+    "lint": "npm run lint --workspaces",
+    "typecheck": "npm run typecheck --workspaces"
+  }
+}
